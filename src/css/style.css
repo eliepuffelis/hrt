@@ -328,6 +328,64 @@ transition: ease-in-out 0.2s;
   display: none;
 }
 
+.form {
+  padding: 8vh 5vw;
+  background: url(../../images/section_backgrounds/contact_background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.form__header {
+  text-align: center;
+  margin-bottom: 7vh;
+}
+
+.form__field {
+  display: block;
+  text-decoration: none;
+  min-width: 85%;
+  height: 6vh; 
+  margin: 3vh auto;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  padding-left: 1.5em;
+  font-size: 0.8em; 
+}
+
+.form__message {
+  border-radius: 15px;
+  height: 30vh;
+  padding-top: 1.5em;
+  margin-top: 8vh;
+}
+
+.form__submit-button {
+  display: block;
+  margin: 5vh auto 0 auto;
+  border: none;
+  outline: none;
+  padding: 15px 70px;
+  border-radius: 30px;
+  font-size: 1em;
+}
+
+.footer {
+  background: black;
+  color: white;
+  padding: 8vh 5vw;
+}
+
+.copyright {
+ background: black;
+ color: white;
+ margin: 0;
+ text-align: center;
+ padding: 5vh;
+}
+
+
+
 
 
 
