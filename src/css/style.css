@@ -189,6 +189,7 @@ align-items: center;
 border: solid 1px black;
 border-radius: 25px;
 padding-left: 1em;
+transition: ease-in-out 0.5s;
 }
 
 input#menu {
@@ -199,7 +200,7 @@ input#menu {
 }
 
 /* Toggle Effect */
-.services-input:checked ~ label {
+input:checked ~ label {
   background: url(../../images/interactive_icons/dropdown_up.png) no-repeat 100% center;
   background-size: contain;
 }
