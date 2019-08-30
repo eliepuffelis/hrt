@@ -79,15 +79,13 @@ p {
 .hero-image {
   position: relative;
   height: 100vh;
-  background: url(../../images/hero_images/hero_image_1_opt.jpg);
+  background: url(../../images/hero_images/hero_image_2.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: right;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-
 }
 
 .hero-image__text {
@@ -97,12 +95,19 @@ p {
 
 
 .hero-image__header {
-  font-size: 3em;
+  font-size: 11em;
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  border: solid white 1px;
+  padding: 0 10vw;
+  
 }
 
 .hero-image__sub-header {
   font-size: 1em;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.2em;
+  margin-top: 3vh;
+  
 }
 .hero-image__link {
   position: absolute;
@@ -110,12 +115,12 @@ p {
   text-align: center;
   color: white;
   font-size: 1.2em;
-  border: solid white 1px;
+  /* border: solid white 1px; */
   padding: 0.5em 2em;
   border-radius: 30px; 
- 
-  
-}
+  background: white;
+  color: var(--main-text-color);
+ }
 
 .about-hrt {
   background: white;
@@ -394,6 +399,7 @@ transition: ease-in-out 0.2s;
   height: 30vh;
   padding-top: 1.5em;
   margin-top: 8vh;
+  resize: none;
 }
 
 .form__submit-button {
