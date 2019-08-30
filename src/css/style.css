@@ -373,16 +373,51 @@ transition: ease-in-out 0.2s;
 .footer {
   background: black;
   color: white;
-  padding: 8vh 5vw;
+  padding: 4vh 5vw;
+}
+
+
+
+
+.footer__menu, .footer__statement, .footer__map {
+  display: none;
+}
+
+.footer__section-title {
+  border-bottom: solid white 1px;
+  padding-bottom: 1em;
+}
+
+.footer__list {
+  list-style-type: none;
+  padding-left: 1.5em;
+  
+}
+
+.footer--links {
+  color: lightgray;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer__contact__type {
+  display: block;
+  font-weight: bold;
+  padding: 2vh 0;
+  font-size: 1.2em;
+  
 }
 
 .copyright {
- background: black;
- color: white;
- margin: 0;
- text-align: center;
- padding: 5vh;
+  background: black;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 5vh;
 }
+
+
+
 
 
 
