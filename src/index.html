@@ -9,23 +9,23 @@
 
 
     <body>
-    
-        <nav class="navbar">
-            <a class="navbar__logo" href="index.html">logo</a>
-            <a class="navbar__english-option" href="">> ENG</a>
-            <div class="navbar__language-divisor"></div>
-            <a class="navbar__spanish-option" href="">ESP</a>
-            <div class="navbar__menu-bars"></div>
-        </nav>
-
         <main>
+                <nav class="navbar">
+                    <a class="navbar__logo" href="index.html"></a>
+                    <a class="navbar__language-option" href="">> ENG</a>
+                    <div class="navbar__language-divisor"></div>
+                    <a class="navbar__language-option" href="">ESP</a>
+                    <div class="navbar__menu-bars"></div>
+                </nav>
+            
+
             <section class="hero-image">
                 <h1 class="hero-image__header">Healthy Relationships Therapy</h1>
                 <h2 class="hero-image__sub-header">Here Just For You</h2>
                 <a  class="hero-image__link" href="">Learn More</a>
             </section>
 
-            <section id="about-hrt">
+            <section class="about-hrt">
                 <h1 class="about-hrt__questions">What is HRT?</h1>
                 <p class="about-hrt__answers">Healthy Relationships Therapy is a therapeutical private practice owned and run by a single therapist,
                     Angelina Puffelis. Hrt will provide clients with a safe and comfortable environment that allows
@@ -45,7 +45,7 @@
 
             <section class="about-me">
                 <div class="about-me__profile-image"></div>
-                <h1 class="about-me_license-title">Angie  Puffelis LMFT</h1>
+                <h1 class="about-me__license-title">Angie  Puffelis LMFT</h1>
                 <p class="about-me__description">Angie has been married for 40 years, has two adult children and a gran-daughter.
                         Angie enjoys spending her time with family movie nights, reading books and dinner dates with 
                         friends.
@@ -55,10 +55,17 @@
                 <a class="about-me__learn-more" href="">Learn More</a>
             </section>
 
-            <section class="services-mobile">
+            <section id="services-mobile" class="services">
 
                 <h1 class="services__header">Available Therapies</h1>
                
+                <div class="dropdown-menu">
+                    <input type="checkbox" id="menu">
+                    <label for="menu"> Individual</label>
+                    <p class="menu-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt inventore enim dolorum voluptatum atque itaque perferendis, nisi eum praesentium facere iusto culpa accusantium quis veniam?</p>
+                </div>
+                
+                
                 <select class="services__select-box">
                         <option class="services__type" selected hidden value="">Individual</option>
                         <option class="services__description">As an individual you will talk about what brings you to therapy.
