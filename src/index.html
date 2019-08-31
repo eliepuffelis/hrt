@@ -9,20 +9,20 @@
     </head>
 
 
-    <body>
+    <body id="body">
         
-
+<div id="site-wrapper">
         <nav class="navbar">
             <a class="navbar__logo" href="index.html"></a>
             <a class="navbar__language-option" href="">> ENG</a>
             <div class="navbar__language-divisor"></div>
             <a class="navbar__language-option" href="">ESP</a>
-            <div class="navbar__menu-bars" onclick="menubarsClicked()"></div>
+            <div class="navbar__menu-bars" onclick="menubars()"></div>
         </nav>
 
-        <div class="menu-mobile-dark-overlay" onclick="closeMobileMenu()"></div>
+        <div id="menu-mobile-dark-overlay" class="menu-mobile-dark-overlay"  onclick="closeMenu()"></div>
 
-        <section class="menu-mobile">
+        <section id="menu-mobile" class="menu-mobile">
 
             <a class="menu-mobile__option" href="index.html"><div class="menu-mobile__icon menu-mobile__icon--home" href=""></div> Home</a>
             <a class="menu-mobile__option" href="index.html"><div class="menu-mobile__icon menu-mobile__icon--about-me" href=""></div> About Me</a>
@@ -399,7 +399,7 @@
 
 
 
-
+    </div>
 
 
 
@@ -822,7 +822,7 @@
 
         </div> -->
 
-        <script src="main.js"></script>
+        <script src="../src/js/main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </body>
 </html>

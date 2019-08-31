@@ -4,11 +4,17 @@
 
 
 body {
-    width: 100vw;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--main-text-color);
+    
+}
+
+#site-wrapper {
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .container {
@@ -74,16 +80,20 @@ p {
   background-size: cover;
   margin-left: 10%;
   margin-right: 6%;
+  cursor: pointer;
 }
 
 .menu-mobile {
-  position: absolute;
+  position: fixed;
   top: 10vh;
-  right: 0;
+  right: -100vw;
   width: 60%;
   height: 90vh;
   background: white;
+  visibility: hidden;
   z-index: 1;
+  transition: ease-in-out 0.3s;
+  
   /* border-top-left-radius: 50px;
   border-bottom-left-radius: 50px; */
 }
@@ -137,13 +147,15 @@ p {
 }
 
 .menu-mobile-dark-overlay {
-  position: absolute;
+  position: fixed;
   top: 10vh;
   left: 0;
   width: 100vw;
   height: 90vh;
   background: rgba(0, 0, 0, 0.7);
   z-index: 1;
+  visibility: hidden;
+  transition: ease-in-out 0.1s;  
 }
 
 

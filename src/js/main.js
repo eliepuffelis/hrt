@@ -1,63 +1,35 @@
 
-var siteWrapper = document.getElementById("site-wrapper");
-var navbar = document.getElementById("navbar");
+var menu = document.getElementById("body");
 var menu = document.getElementById("menu");
-var mobileMenu = document.getElementById("menu-mobile");
-var mobileMenuDarkOverlay = document.getElementById("menu-mobile-dark-overlay");
-var mobileMenuOpen = false;
+var menuMobile = document.getElementById("menu-mobile");
+var darkOverlay = document.getElementById("menu-mobile-dark-overlay");
+var menuOpen = false;
 
-
-// window.addEventListener('scroll', () => {
-
-// if($(window).scrollTop() > 0)
-//     navbar.style.backgroundColor = 'white'
-// else
-//     navbar.style.backgroundColor = 'transparent';
-// },false);
-
-function closeMobileMenu() {
-    mobileMenu.style.right = '-100%';
-    mobileMenuDarkOverlay.style.visibility = 'hidden';
-    mobileMenuDarkOverlay.style.opacity = '0';
-    mobileMenuOpen = false;
-    siteWrapper.style.overflow = 'scroll';
-
+function menubars() {
+    
+    if(!menuOpen)
+        openMenu();
+    else
+        closeMenu();
 }
 
-function openMenu() {
-    menu.style.left = '0';
-    if (!mobileMenuOpen) {
-        mobileMenu.style.right = '0';
-        mobileMenuOpen = true;
-        mobileMenuDarkOverlay.style.visibility = 'visible';
-        mobileMenuDarkOverlay.style.opacity = '0.7';
-        siteWrapper.style.overflow = 'hidden';
-
-
-    }
-    else {
-        mobileMenu.style.right = '-100%';
-        mobileMenuOpen = false;
-        mobileMenuDarkOverlay.style.visibility = 'hidden';
-        mobileMenuDarkOverlay.style.opacity = '0';
-        siteWrapper.style.overflow = 'scroll';
-
-    }
-
-
+function openMenu(){
+    menuMobile.style.visibility = 'visible';
+    menuMobile.style.right = '0';
+    darkOverlay.style.visibility = 'visible'
+    menuOpen = true; 
 
 }
 
 function closeMenu() {
-    menu.style.left = '100%';
-    siteWrapper.style.overflow = 'scroll';
-    siteWrapper.style.scrollBehavior = 'smooth';
+    menuMobile.style.visibility = 'hidden';
+    menuMobile.style.right = '-100vw';
+    darkOverlay.style.visibility = 'hidden'
+    menuOpen = false;
 }
 
-// function navbarWhite(){
-//     navbar.style.backgroundColor = 'white';
-// }
 
-// function navbarTransparent(){
-//     navbar.style.backgroundColor = 'transparent';
-// }
+
+
+
+
