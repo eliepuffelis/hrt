@@ -136,6 +136,16 @@ p {
   background-repeat: no-repeat;
 }
 
+.menu-mobile-dark-overlay {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 100vw;
+  height: 90vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
 
 .hero-image {
   position: relative;
