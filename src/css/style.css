@@ -76,6 +76,67 @@ p {
   margin-right: 6%;
 }
 
+.menu-mobile {
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  width: 60%;
+  height: 90vh;
+  background: white;
+  z-index: 1;
+  /* border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px; */
+}
+
+.menu-mobile__option {
+  display: inline-block;
+  max-width: 100%;
+  height: 12.5%;
+  display: flex;
+  align-items: center;
+  border-bottom: solid lightgray 1px;
+  padding-left: 1.5em;  
+}
+
+
+
+.menu-mobile__icon--home{
+  background: url(../../images/menu_icons/menu_home_icon.png);
+}
+.menu-mobile__icon--about-me{
+  background: url(../../images/menu_icons/menu_about_me_icon.png);
+}
+.menu-mobile__icon--services{
+  background: url(../../images/menu_icons/menu_services_icon.png);
+}
+.menu-mobile__icon--pricing{
+  background: url(../../images/menu_icons/menu_pricing_icon.png);
+}
+.menu-mobile__icon--faq{
+  background: url(../../images/menu_icons/menu_faq_icon.png);
+}
+.menu-mobile__icon--contact{
+  background: url(../../images/menu_icons/menu_contact_icon.png);
+}
+.menu-mobile__icon--resources{
+  background: url(../../images/menu_icons/menu_resources_icon.png);
+}
+.menu-mobile__icon--gallery{
+  background: url(../../images/menu_icons/menu_gallery_icon.png);
+}
+
+.menu-mobile__icon {
+  width: 45px;
+  height: 45px;
+  margin-right: 1.5em;
+  border: solid black 1px;
+  border-radius: 50%;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 .hero-image {
   position: relative;
   height: 100vh;
