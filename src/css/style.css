@@ -21,7 +21,7 @@ a {
 }
 
 p {
-  line-height: 1.5em;
+  line-height: 1.75em;
 }
 
 
@@ -114,9 +114,8 @@ p {
   top: 85%;
   text-align: center;
   color: white;
-  font-size: 1.2em;
-  /* border: solid white 1px; */
-  padding: 0.5em 2em;
+  font-size: 1em;
+  padding: 1em 4em;
   border-radius: 30px; 
   background: white;
   color: var(--main-text-color);
@@ -138,7 +137,7 @@ p {
   color: white;
   padding: 8vh 8vw;
   border-radius: 30px;
-
+  text-align: center;
 }
 
 .about-me__profile-image {
@@ -159,16 +158,16 @@ p {
   font-size: 1.5em;
 }
 
+.about-me__description {
+  text-align: left;
+}
+
 .about-me__learn-more {
   display: inline-block;
   margin: 7vh auto 0 auto;
-  width: 150px;
-  height: 5vh;
+  padding: 1em 4em;
   border: solid white 1px;
   border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
   transition: ease-in-out 0.3s;
 }
@@ -190,7 +189,7 @@ p {
 
 
 .services-dropdown {
-  border: solid black 1px;
+  border: solid var(--main-text-color) 1px;
   border-radius: 30px;
   margin-bottom: 3vh;
 }
@@ -223,7 +222,6 @@ transition: ease-in-out 0.2s;
 
 .services-dropdown__content {
   display: none;
-  transition: ease-in-out 0.3s;
 }
 
 .services-dropdown__input:checked ~ .services-dropdown__content {
@@ -323,7 +321,7 @@ transition: ease-in-out 0.2s;
 
 
 .faq-dropdown {
-  border: solid black 1px;
+  border: solid var(--main-text-color) 1px;
   border-radius: 30px;
   margin-bottom: 3vh;
 }
@@ -407,19 +405,17 @@ transition: ease-in-out 0.2s;
   margin: 5vh auto 0 auto;
   border: none;
   outline: none;
-  padding: 15px 70px;
+  padding: 1em 4em;
   border-radius: 30px;
   font-size: 1em;
 }
 
 .footer {
+  position: relative;
   background: black;
   color: white;
   padding: 4vh 5vw;
 }
-
-
-
 
 .footer__menu, .footer__statement, .footer__map {
   display: none;
@@ -447,7 +443,38 @@ transition: ease-in-out 0.2s;
   font-weight: bold;
   padding: 2vh 0;
   font-size: 1.2em;
-  
+}
+
+.footer__contact__social-media-icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 3%;
+  margin-top: 5%;
+}
+
+.footer__contact__social-media-icon--instagram {
+  background: url(../../images/socialmedia_icons/instagram-icon-white.png);
+  background-size: cover;
+}
+
+.footer__contact__social-media-icon--linkedin {
+  background: url(../../images/socialmedia_icons/linkedin-icon-white.png);
+  background-size: cover;
+}
+
+.back-to-top-mobile {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  bottom: 10%;
+  right: 10%;
+  background: url(../../images/interactive_icons/back_to_top_arrow_white.png);
+  border: solid orangered 5px;
+  border-radius: 50%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .copyright {
