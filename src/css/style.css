@@ -63,15 +63,19 @@ p {
   font-weight: bold;
   transition: ease-in-out 0.3s;
   font-size: 0.9em;
-  
+  transition: ease-in-out 0.3s;
+}
 
+.navbar__language-option:hover {
+  transform: scale(1.15);
+  color: var(--main-text-color) !important;
 }
 
 .navbar__language-divisor {
   width: 2px;
   height: 30%;
   background: black;
-  margin: 0 2%;
+  margin: 0 3%;
 }  
 
 .navbar__menu-bars {
@@ -106,8 +110,6 @@ p {
   padding-left: 1.5em;  
 }
 
-
-
 .menu-mobile__icon--home{
   background: url(../../images/menu_icons/menu_home_icon.png);
 }
@@ -137,8 +139,6 @@ p {
   width: 30px;
   height: 30px;
   margin-right: 1.5em;
-  /* border: solid black 1px;
-  border-radius: 50%; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -271,7 +271,6 @@ p {
   text-align: center;
   margin-bottom: 8vh;
 }
-
 
 
 .services-dropdown {
