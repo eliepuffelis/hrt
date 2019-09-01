@@ -9,6 +9,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--main-text-color);
+   
     
 }
 
@@ -43,6 +44,7 @@ p {
   align-items: center;
   background: white;
   z-index: 1;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
   
 }
 
@@ -333,7 +335,7 @@ transition: ease-in-out 0.2s;
 
 .pricing__card {
   margin: 5vh auto;
-  max-width: 70%; 
+  width: 70%; 
   background: white;
   border-radius: 40px;
   box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2);
@@ -608,20 +610,48 @@ transition: ease-in-out 0.2s;
 
 @media (min-width: 1000px) {
 
-  .pricing{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .services-dropdown {
+    width: 80%;
+    margin: 0 auto 5vh auto;
+    transition: ease-in-out 0.2s;
+
+  }
+
+  .services-dropdown:hover {
+    transform: scale(1.05);
+    background: whitesmoke;
+  }
+
+  .pricing {
     padding: 0;
-    margin: 0;
+    padding-top: 6vh;
+    padding-bottom: 8vh;
+  }
+
+  .pricing__card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .pricing__card {
-    display: inline-block;
     margin: 0;
     padding: 0;
-    max-width: 15%;
+    width: 17%;
+    height: 50vh;
+  }
+
+  .faq-dropdown {
+    width: 80%;
+    margin: 0 auto 5vh auto;
+    transition: ease-in-out 0.2s;
+
+  }
+
+  .faq-dropdown:hover {
+    transform: scale(1.05);
+    background: whitesmoke;
   }
 
  
