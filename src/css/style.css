@@ -18,7 +18,7 @@ body {
   height: 100vh;
 }
 
-.container {
+.wrapper {
   max-width: 100%;
 }
 
@@ -37,7 +37,7 @@ p {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 10vh;
+  height: 8vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -51,10 +51,10 @@ p {
   width: 20%;
   height: 60%;
   background: url(../../images/hrt_logo/logo_black.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   margin-right: auto;
-  
 }
 
 .navbar__language-option {
@@ -90,10 +90,10 @@ p {
 
 .menu-mobile {
   position: fixed;
-  top: 10vh;
+  top: 8vh;
   right: -100vw;
   width: 60%;
-  height: 90vh;
+  height: 92vh;
   background: white;
   visibility: hidden;
   z-index: 1;
@@ -146,10 +146,10 @@ p {
 
 .menu-mobile-dark-overlay {
   position: fixed;
-  top: 10vh;
+  top: 8vh;
   left: 0;
   width: 100vw;
-  height: 90vh;
+  height: 92vh;
   background: rgba(0, 0, 0, 0.8);
   z-index: 1;
   visibility: hidden;
@@ -322,7 +322,6 @@ transition: ease-in-out 0.2s;
   padding: 5vh 8vw;
   background: rgb(255, 36, 36);
   background: linear-gradient(140deg, rgba(255, 36, 36, 1) 0%, rgba(155, 76, 255, 1) 70%, rgba(213, 150, 199, 1) 100%);
-
 }
 
 .pricing__header {
@@ -459,17 +458,22 @@ transition: ease-in-out 0.2s;
   border-top-right-radius: 30px;
 }
 
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form__header {
   text-align: center;
   margin-bottom: 7vh;
 }
 
 .form__field {
-  display: block;
   text-decoration: none;
-  min-width: 85%;
+  width: 85%;
   height: 6vh; 
-  margin: 3vh auto;
+  margin: 3vh 0;
   border-radius: 30px;
   outline: none;
   border: none;
@@ -477,17 +481,10 @@ transition: ease-in-out 0.2s;
   font-size: 0.8em; 
 }
 
-.form__message {
-  border-radius: 15px;
-  height: 30vh;
-  padding-top: 1.5em;
-  margin-top: 8vh;
-  resize: none;
-}
 
 .form__submit-button {
-  display: block;
-  margin: 5vh auto 0 auto;
+  
+  margin: 5vh 0;
   border: none;
   outline: none;
   padding: 1em 4em;
@@ -571,7 +568,66 @@ transition: ease-in-out 0.2s;
 
 
 
+@media(min-width: 300px){
 
+}
+
+@media(min-width: 500px) {
+
+}
+
+@media(min-width: 700px) {
+  .form {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__field {
+   width: 40vw;
+   margin: 0;
+   margin: 3vh 0;
+  }
+
+  .form__submit-button {
+    margin: 0;
+    margin-top: 3vh;
+    border: none;
+    outline: none;
+    padding: 1em 4em;
+    border-radius: 30px;
+    font-size: 1em;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  .pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pricing__card {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    max-width: 15%;
+  }
+
+ 
+
+  
+}
 
 
 
