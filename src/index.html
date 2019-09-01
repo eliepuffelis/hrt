@@ -12,7 +12,8 @@
     <body id="body">
         
         <div id="site-wrapper">
-            <nav class="navbar">
+
+            <nav class="navbar" navbar>
                 <a class="navbar__logo" href="index.html"></a>
                 <a class="navbar__language-option" href="">> ENG</a>
                 <div class="navbar__language-divisor"></div>
@@ -24,16 +25,43 @@
 
             <section id="menu-mobile" class="menu-mobile">
 
-                <a class="menu-mobile__option" id="scroll-home" href="#footer"><div class="menu-mobile__icon menu-mobile__icon--home" href=""></div> Home</a>
-                <a class="menu-mobile__option" href="index.html"><div class="menu-mobile__icon menu-mobile__icon--about-me" href=""></div> About Me</a>
-                <a class="menu-mobile__option" href="index.html"><div class="menu-mobile__icon menu-mobile__icon--services" href=""></div> Services</a>
-                <a class="menu-mobile__option" href="index.html"><div class="menu-mobile__icon menu-mobile__icon--pricing" href=""></div> Pricing</a>
-                <a class="menu-mobile__option" href="index.html"><div class="menu-mobile__icon menu-mobile__icon--faq" href=""></div> Faq</a>
-                <a class="menu-mobile__option" href="index.html"><div class="menu-mobile__icon menu-mobile__icon--contact" href=""></div> Contact</a>
-                <a class="menu-mobile__option" href="index.html"><div class="menu-mobile__icon menu-mobile__icon--resources" href=""></div> Resources</a>
-                <a class="menu-mobile__option" href="index.html" style="border: none"><div class="menu-mobile__icon menu-mobile__icon--gallery" href=""></div> Gallery</a>
+                <a class="menu-mobile__option" onclick="closeMenu()" href="#site-wrapper"><div class="menu-mobile__icon menu-mobile__icon--home" href=""></div> Home</a>
+                <a class="menu-mobile__option" onclick="closeMenu()" href="#about-me"><div class="menu-mobile__icon menu-mobile__icon--about-me" href=""></div> About Me</a>
+                <a class="menu-mobile__option" onclick="closeMenu()" href="#services"><div class="menu-mobile__icon menu-mobile__icon--services" href=""></div> Services</a>
+                <a class="menu-mobile__option" onclick="closeMenu()" href="#pricing"><div class="menu-mobile__icon menu-mobile__icon--pricing" href=""></div> Pricing</a>
+                <a class="menu-mobile__option" onclick="closeMenu()" href="#faq"><div class="menu-mobile__icon menu-mobile__icon--faq" href=""></div> Faq</a>
+                <a class="menu-mobile__option" onclick="closeMenu()" href="#form"><div class="menu-mobile__icon menu-mobile__icon--contact" href=""></div> Contact</a>
+                <a class="menu-mobile__option" onclick="closeMenu()" href="#resources"><div class="menu-mobile__icon menu-mobile__icon--resources" href=""></div> Resources</a>
+                <a class="menu-mobile__option" onclick="closeMenu()" href="#site-wrapper" style="border: none"><div class="menu-mobile__icon menu-mobile__icon--gallery" href=""></div> Gallery</a>
                 
+            </section>
 
+            <section id="menu">
+                <div id="menu-close-container">
+                    <div id="close-menu" onclick="closeMenu()"></div>
+                </div>
+                <div class="menu-option-halves">
+                    <a onclick="closeMenu(); navbarTransparent()" href="#body" id="home-menu-icon" class="menu-option-icon"
+                        onclick="navbarTransparent()"></a>
+                    <a onclick="closeMenu(); navbarWhite()" href="#about-me-container" id="about-menu-icon"
+                        class="menu-option-icon"></a>
+                    <a onclick="closeMenu()" href="#services-container" id="services-menu-icon" class="menu-option-icon"
+                        onclick="navbarWhite()"></a>
+                    <a onclick="closeMenu()" href="#pricing-container" id="pricing-menu-icon" class="menu-option-icon"
+                        onclick="navbarWhite()"></a>
+                </div>
+                <div class="menu-option-halves">
+                    <a href="#faq-container" onclick="closeMenu()" id="faq-menu-icon" class="menu-option-icon"
+                        onclick="navbarWhite()"></a>
+                    <a href="#contact-container" onclick="closeMenu()" id="contact-menu-icon" class="menu-option-icon"
+                        onclick="navbarWhite()"></a>
+                    <a href="#resources-container" onclick="closeMenu()" id="resources-menu-icon" class="menu-option-icon"
+                        onclick="navbarWhite()"></a>
+                    <a href="#footer" onclick="closeMenu()" id="gallery-menu-icon" class="menu-option-icon"
+                        onclick="navbarWhite()"></a>
+                </div>
+            
+            
             </section>
             
 
@@ -42,8 +70,6 @@
                 <h2 class="hero-image__text hero-image__sub-header">healthy relationships therapy</h2>
                 <a  class="hero-image__link" href="#about-hrt">Learn More</a>
             </section>
-
-
 
 
             <section id="about-hrt" class="about-hrt container">
@@ -65,9 +91,7 @@
             </section>
 
 
-
-
-            <section class="about-me container">
+            <section id="about-me" class="about-me container">
                 <div class="about-me__profile-image"></div>
                 <h1 class="about-me__license-title">Angie  Puffelis LMFT</h1>
                 <p class="about-me__description">Angie has been married for 40 years, has two adult children and a gran-daughter.
@@ -80,8 +104,7 @@
             </section>
 
 
-
-            <section id="services-mobile" class="services">
+            <section id="services" class="services">
 
                 <h1 class="services__header">Available Therapies</h1>
                 
@@ -142,8 +165,7 @@
             </section>
 
 
-
-            <section class="pricing container">
+            <section id="pricing" class="pricing container">
                 <h1 class="pricing__header">Pricing</h1>
                 
                 <div class="pricing__card">
@@ -200,8 +222,7 @@
             </section>
 
 
-
-            <section class="faq container">
+            <section id="faq" class="faq container">
 
                 <h1 class="faq__header">FAQ</h1>
 
@@ -285,7 +306,7 @@
             </section>
 
             
-            <form action="POST" class="form container" data-netlify="true">
+            <form id="form" action="POST" class="form container" data-netlify="true">
                 <h1 class="form__header">message hrt.</h1>
                 <input class="form__field" type="text" name="" required placeholder="First Name *">
                 <input class="form__field" type="text" name="" required placeholder="Last Name *">
@@ -293,7 +314,6 @@
                 <!-- <textarea class="form__message form__field" name="message" required placeholder="Message *"></textarea>    -->
                 <button class="form__submit-button" type="submit" name="submit">Submit</button>              
             </form>
-
 
 
             <footer  id="footer" class="footer container">
@@ -314,7 +334,7 @@
 
                 </section>
 
-                <section class="footer__resources">
+                <section id="resources" class="footer__resources">
                     <h1 class="footer__section-title">R e s o u r c e s</h1>
                     <ul class="footer__list">
                         <li><a class="footer__resources__links footer--links"
@@ -386,436 +406,16 @@
 
                 </section>
 
-                <a class="back-to-top-mobile" href="#navbar"></a>
+                <a class="back-to-top-mobile" href="#body"></a>
             </footer>
 
             <h6 class="copyright">| © | 2018 | healthyrelationshipstherapy.com | All Rights Reserved |</h6>
 
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <div id="site-wrapper">
-            <div id="landscape-message"></div>
-
-            <nav id="navbar">
-                <a id="logo-container" href="index.html"></a>
-                <div id="language-selection-container">
-                    <a id="english-option" class="language-option" href="">> ENG</a>
-                    <div id="language-option-divider"></div>
-                    <a  id="spanish-option" class="language-option" href="">ESP</a>
-
-                </div>
-                <div id="menu-bars" onclick="openMenu()"></div>
-                
-            </nav>
-
-            <section id="menu">
-                <div id="menu-close-container"><div id="close-menu" onclick="closeMenu()"></div></div>
-                <div class="menu-option-halves">
-                    <a onclick="closeMenu(); navbarTransparent()" href="#body" id="home-menu-icon" class="menu-option-icon" onclick="navbarTransparent()"></a>
-                    <a onclick="closeMenu(); navbarWhite()" href="#about-me-container" id="about-menu-icon" class="menu-option-icon"></a>
-                    <a onclick="closeMenu()" href="#services-container" id="services-menu-icon" class="menu-option-icon" onclick="navbarWhite()"></a>
-                    <a onclick="closeMenu()" href="#pricing-container" id="pricing-menu-icon" class="menu-option-icon" onclick="navbarWhite()"></a>
-                </div>
-                <div class="menu-option-halves">
-                    <a href="#faq-container" onclick="closeMenu()" id="faq-menu-icon" class="menu-option-icon" onclick="navbarWhite()"></a>
-                    <a href="#contact-container" onclick="closeMenu()" id="contact-menu-icon" class="menu-option-icon" onclick="navbarWhite()"></a>
-                    <a href="#resources-container" onclick="closeMenu()" id="resources-menu-icon" class="menu-option-icon" onclick="navbarWhite()"></a>
-                    <a href="#footer" onclick="closeMenu()" id="gallery-menu-icon" class="menu-option-icon" onclick="navbarWhite()"></a>
-                </div>
-                
-
-            </section>
-
-            
-            <div id="menu-mobile-dark-overlay" onclick="closeMobileMenu()"></div>
-
-            <section id="menu-mobile">
-                    
-        
-                <a class="menu-mobile-options" href="#navbar"><div id="menu-mobile-home-icon" class="menu-mobile-icons"></div><label for="" style="border-top-left-radius: 25px;">Home</label></a>
-                <a class="menu-mobile-options" href="#about-me-container"><div id="menu-mobile-about-icon" class="menu-mobile-icons"></div><label for="">About</label></a>
-                <a class="menu-mobile-options" href="#services-container"><div id="menu-mobile-services-icon" class="menu-mobile-icons"></div><label for="">Services</label></a>
-                <a class="menu-mobile-options" href="#pricing-container"><div id="menu-mobile-pricing-icon" class="menu-mobile-icons"></div><label for="">Pricing</label></a>
-                <a class="menu-mobile-options" href="#faq-container"><div id="menu-mobile-faq-icon" class="menu-mobile-icons"></div><label for="">FAQ</label></a>
-                <a class="menu-mobile-options" href="#contact-container"><div id="menu-mobile-contact-icon" class="menu-mobile-icons"></div><label for="">Contact</label></a>
-                <a class="menu-mobile-options" href="#resources-container"><div id="menu-mobile-resources-icon" class="menu-mobile-icons" ></div><label for="">Resources</label></a>
-                <a class="menu-mobile-options" href=""><div id="menu-mobile-gallery-icon" class="menu-mobile-icons"></div><label for="" style="border-bottom-left-radius: 25px;">Gallery</label></a>
-
-            </section>
-            
-
-            <section id="hero-image">
-                <h1>Here Just For You</h1>
-                <h3>individual | couples | families | group | </h3>
-                <a id="learn-more-button"href="#about-hrt-container">Learn More</a>
-            </section>
-
-
-            <section id="about-hrt-container">
-                <label class="about-hrt-headers">What is HRT?</label>
-                <p>Healthy Relationships Therapy is a therapeutical private practice owned and run by a single therapist,
-                    Angelina Puffelis. Hrt will provide clients with a safe and comfortable environment that allows
-                    each individual to share the need of their current situation during each session. </p>
-                <label class="about-hrt-headers">What is a healthy relationship?</label>
-                <p>A healthy relationship is considered when two people, through constant engagement, develop a connection
-                    founded on mutual trust, respect, and open honest communication. In other words, a healthy relationship
-                    feels safe enough to be vulnerable when expressing oneself and no person feels as they are walking on
-                    egg shells. </p>
-                <label class="about-hrt-headers">What is HRT's goal?</label>
-                <p>Hrt’s goal is to help each individual successfully find solutions to their problems on their own,
-                    alongside the supportive guidance they need. In addition, Angelina is passionate in helping each person
-                    gain insight to create and reach their own goals resulting in a healthier future. Simply, hrt strives
-                    to help you in any possible way that it can, while making sure the journey to the better you was a
-                    pleasing and memorable one.</p>
-                
-            </section>
-
-            <section id="about-me-container">
-                
-                <div id="about-me-content-container">
-                    <div id="about-me-content-inner-container">
-                        <h1>Angie Puffelis LMFT</h1>
-                        <p>Angie has been married for 40 years, has two adult children and a gran-daughter.
-                                Angie enjoys spending her time with family movie nights, reading books and dinner dates with 
-                                friends.
-                                Also, Angie likes challenging herself by running marathons and taking up any new interesting hobbies she comes across.
-                                Whether through her professional accomplishments or everyday life experiences, Angie continuosly
-                                looks for new ways to better serve her clients.
-                        </p>
-                        <a id="more-about-angie-link" href="">More About Angie</a>
-                    </div>
-                    
-                </div>
-                <div id="about-me-profile-image"></div>
-            </section>
-
-            <section id="services-container">
-                <h1>Available Therapies</h1>
-                
-                    <ul>
-                        <li>
-                            <h2 class="service-title">Individual</h2>
-                            <p class="service-description">As an individual you will talk about what brings you to therapy.
-                                Together, we will explore and eestablish goals to achieve your desired outcome.</p>
-                        </li>
-                    
-                    
-                        <li>
-                            <h2 class="service-title">Couples</h2>
-                            <p class="service-description">Life challenges can hinder a couple's relationship and cause it to
-                                become more difficult as time goes by. During these meetings, each partner will gain insight as
-                                theu develop practical skiills to enrich thei relationship. Ultimately, we seek to build a
-                                strong and lasting foundation for the future.</p>
-                        </li>
-                    
-                    
-                        <li>
-                            <h2 class="service-title">Children</h2>
-                            <p class="service-description">Are you stressed or overwhelemd? Parenting can be a challenging
-                                task. As we meet, we will work to develope essential skills for your child's healthy
-                                development. In response, they will be able to achieve a beautiful andd successful life, all
-                                while bringing satisfaction to you as parent.</p>
-                        </li>
-                    
-                    
-                        <li>
-                            <h2 class="service-title">Family</h2>
-                            <p class="service-description">Families go through life stages and sometimes find themselves
-                                stuck, hurting and in need of help. Here, families will encounter sessions which are tailored
-                                to their needs all while strengthening relatonships with one anotherandd supporting each
-                                other's growth. In addition, parents with children under 12 years old, will need to sign a
-                                consent for their children.</p>
-                        </li>
-                    
-                    
-                        <li>
-                            <h2 class="service-title">Groups</h2>
-                            <p class="service-description">Support groups are peer to peer interaction and discussion
-                                meetings that offer individuals a safe, nonjudgmental and a respectful
-                                environment to share and grow. The goal is to discover
-                                untapped potentials, while enabling learning from each other as connections are made. Length of
-                                sessions depend on type of group.</p>
-                        </li>
-                    
-                    
-                        <li>
-                            <h2 class="service-title">Telemedia</h2>
-                            <p class="service-description">An alternative for those who cannon make a trip to the office, but
-                                are still seeking the help and peace of mind for their current situation. Here a person will
-                                have a one on one session via video call.</p>
-                        </li>
-                        
-                    </ul>
-                
-                
-                
-            </section>
-
-            <section id="pricing-container">
-                <h2 id="pricing-header">Pricing</h2>
-                <div id="pricing-cards-container">
-                    <div class="pricing-card">
-                        <label class="pricing-card-title">Initial Consultation</label>
-                        <div id="consultation-pricing-image" class="pricing-image"></div>
-                        <label class="price">Free</label>
-                        <label class="price-subtitle" style="visibility:hidden">Per Individual</label>
-                        <div class="pricing-card-bullets-container">
-                            <label class="pricing-card-bullets">+ 20 Minutes</label>
-                            <label class="pricing-card-bullets">+ Phone Consultation</label>
-                            <label class="pricing-card-bullets">+ What to Expect</label>
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="pricing-card">
-                        <label class="pricing-card-title">Individual</label>
-                        <div id="individual-pricing-image" class="pricing-image"></div>
-                        <label class="price">$125</label>
-                        <label class="price-subtitle" style="visibility:hidden">Per Individual</label>
-                        <div class="pricing-card-bullets-container">
-                            <label class="pricing-card-bullets">+ 50 Minutes</label>
-                            <label class="pricing-card-bullets">+ Hrt Office Location</label>
-                            <label class="pricing-card-bullets">+ Medical Accepted</label>
-                            
-                        </div>
-                    </div>
-                    <div class="pricing-card">
-                        <label class="pricing-card-title">Couples</label>
-                        <div id="couple-pricing-image" class="pricing-image"></div>
-                        <label class="price">$175</label>
-                        <label class="price-subtitle" style="visibility:hidden">Per Individual</label>
-                        <div class="pricing-card-bullets-container">
-                            <label class="pricing-card-bullets">+ 50 Minutes</label>
-                            <label class="pricing-card-bullets">+ Hrt Office Location</label>
-                            <label class="pricing-card-bullets">+ Including pre-marital</label>
-                    
-                        </div>
-                    </div>
-                    <div class="pricing-card">
-                        <label class="pricing-card-title">Families</label> 
-                        <div id="family-pricing-image" class="pricing-image"></div>
-                        <label class="price">$200</label>
-                        <label class="price-subtitle">Therapy for 3-5 family members</label>
-                        <div class="pricing-card-bullets-container">
-                            <label class="pricing-card-bullets">+ 50 Minutes</label>
-                            <label class="pricing-card-bullets">+ Hrt Office Location</label>
-                            <label class="pricing-card-bullets">+ Household only</label>
-                            
-                        </div>   
-                    </div>
-                    <div class="pricing-card" >
-                        <label class="pricing-card-title">Groups</label>
-                        <div id="group-pricing-image" class="pricing-image"></div>
-                        <label class="price">$50</label>
-                        <label class="price-subtitle">Per Individual</label>
-                        <div class="pricing-card-bullets-container">
-                            <label class="pricing-card-bullets">+ 50 Minutes</label>
-                            <label class="pricing-card-bullets">+ Hrt Office Location</label>
-                            <label class="pricing-card-bullets">+ 8-12 Group Sessions</label>
-                            
-                        </div>
-                    </div>
-                </div>
-                <h3 id="cancellation-fee">If you need to cancel or reschedule an appointment, please note you must do so<br>no less than 24 hours before said appointment, or a $50.00 fee will be incurred.<br>Thank you for understanding.</h3>
-                
-            </section>
-
-            <section id="faq-container">
-                <h1>FAQ</h1>
-                
-                  
-                    <ul>
-                        <li>
-                            <h2 class="question">Is therapy for me ?</h2>
-                            <p class="answer">People usually seek therapy for various reasons such as
-                                    relationship issues,
-                                    parenting, work, money, life stages, divorce, grief, trauma and others. However, we have the
-                                    tendency not to seek therapy due to the embarrassment or shame of reaching out to seek help.
-                                    Unfortunately, therapy has been misunderstood and seen negative rather than positive. Therapy is a
-                                    tool that helps resolve a wide range of issues. Ultimately, a person who seeks therapy is wise and
-                                    demonstrates a sense of wisdom and healthier lifestyle than he or she knows.
-                            </p>
-                        </li>
-
-                        <li>
-                            <h2 class="question">How private is therapy really?</h2>
-                            <p class="answer">Your information will be confidential. If an unauthorized person requests
-                                    information about you, the therapist will decline to acknowledge you are a client. However, you may
-                                    consent for your information to be released to a specific entity. Likewise, there are instances
-                                    where the law requires your therapist to report any child abuse, self-harm, and elderly or
-                                    dependent adult abuse. These technicalities will be addressed in further detail during the first
-                                    sessions.</p>
-                        </li>
-
-                        <li>
-                            <h2 class="question">Is insurance available?</h2>
-                            <p class="answer">Insurance will be accepted but is currently pending. You can find more information
-                                    in pricing section above.</p>
-
-                        </li>
-
-                        <li>
-                                <h2 class="question">What do I need to bring to therapy?</h2>
-                                <p class="answer">Yes, an intake form has been provided for you so you can have it filled out before
-                                        the first appointment.This intake form can be found when clicking on the “client form” at the
-                                        bottoom right under the services section. Also, If you have any previous evaluations / assessments,
-                                        for you, or your child, by any previous medical professional please bring that as well.</p>
-                        </li>
-
-                        <li>
-                            <h2 class="question">How long are therapy sessions?</h2>
-                            <p class="answer">Therapy sessions usually last 50 minutes, unless advised otherwse group sessions may
-                                    last longer if all parties have come to an agreement on what works best.</p>
-                        </li>
-
-                        <li>
-                            <h2 class="question">What if I need to miss or cancel?</h2>
-                            <p class="answer">As stated in the pricing section, clients who miss or cancel an appointment with
-                                    less than a 24 hour notice, will be charged a fee of $50.00. Again, thank you for understanding.</p>
-                        </li>
-
-                        <li>
-                            <h2 class="question">How often do I need to go to therapy?</h2>
-                            <p class="answer">Each case is unique and may require different accommodations depending on the
-                                    need(s), and goal(s) in progress. Some clients may need to only meet once or some a couple times.
-                                    Although it is recommended to finish the suggested amount of therapy sessions, clients are not
-                                    forced to continue and may stop at anytime.</p>
-                        </li>
-
-                        <li>
-                            <h2 class="question">Can a young child benefit from therapy?</h2>
-                            <p class="answer">Many therapists are skilled and use play therapy. Young children communicate through
-                                    the universal language of play, since they temporarily have limited verbal skills. Parents are
-                                    usually involved in sessions and provided with skills
-                                    to help their child.</p>
-                        </li>
-
-                    </ul>
-                
-            </section>
-
-            <section id="contact-container">
-                
-                <form action="POST" data-netlify="true">
-                    <h1>message hrt.</h1>
-                    <input class="form-field" type="text" name="firstname" required placeholder="First Name *">
-                    <input class="form-field" type="text" name="lastname" required placeholder="Last Name *">
-                    <input class="form-field" type="text" name="email" required placeholder="Email *">
-                    <textarea  name="message" required placeholder="Message *"></textarea>
-                    <button id="form-submit-button" type="submit" name="submit">Submit</button>
-                </form>
-
-            </section>
-
-            <footer id="footer">
-                <div id="dummy-footer"></div>
-                <div id="footer-menu">
-                    <h3 class="footer-section-title">M e n u</h3>
-                    
-                    <ul class="footer-list">
-                        <li><a class="footer-menu-links footer-links" href="">Home</a></li>
-                        <li><a class="footer-menu-links footer-links" href="">About</a></li>
-                        <li><a class="footer-menu-links footer-links" href="">Services</a></li>
-                        <li><a class="footer-menu-links footer-links" href="">Pricing</a></li>
-                        <li><a class="footer-menu-links footer-links" href="">FAQ</a></li>
-                        <li><a class="footer-menu-links footer-links" href="">Contact</a></li>
-                        <li><a class="footer-menu-links footer-links" href="">Resources</a></li>
-                        <li><a class="footer-menu-links footer-links" href="">Gallery</a></li>
-                    </ul>
-
-                </div>
-
-                <div id="resources-container">
-                    <h3 class="footer-section-title">R e s o u r c e s</h3>
-                    <ul class="footer-list">
-                            <li><a class="resources footer-links" href="https://www.optumsandiego.com/content/sandiego/en/access---crisis-line.html">Access & Crisis Line</a></li>
-                            <li><a class="resources footer-links" href="https://suicidepreventionlifeline.org/">Suicide Prevention Hotline</a>S</li>
-                            <li><a class="resources footer-links" href="https://www.rainn.org/">Sexual Assault Hotline</a></li>
-                            <li><a class="resources footer-links" href="http://www.aasandiego.org/">Alcoholic Anonymous San Diego</a></li>
-                            <li><a class="resources footer-links" href="https://www.sandiego.gov/police/services/prevention/victimresources/reportchildabuse">Child Abuse Hotline</a></li>
-                            <li><a class="resources footer-links" href="https://www.thehotline.org/">Relationship Violence Outreach</a></li>
-                            <li><a class="resources footer-links" href="https://www.lassd.org/">Legal Aid Society of San Diego</a></li>
-                            <li><a class="resources footer-links" href="http://www.sdcourt.ca.gov/portal/page?_pageid=55,1524197&_dad=portal&_schema=PORTAL">Family Law Assistance</a></li>
-                        </ul>
-                </div>
-
-                <div id="footer-contact-container">
-                    <h3 class="footer-section-title">C o n t a c t</h3>
-                    <ul class="footer-list">
-                        <li>
-                            <label class="contact-option-type">Address</label>
-                            <a class="footer-contact-links footer-links" href="https://www.google.com/maps/place/3511+Camino+del+Rio+S+%2350,+San+Diego,+CA+92108/@32.7769724,-117.1200121">3511 Camino  Del Rio South<br>#50 San Diego CA 92108</a>
-                        </li>
-                        <li>
-                            <label class="contact-option-type">Phone</label>
-                            <a class="footer-contact-links footer-links" href="href="tel:1-619-494-7708">(619) 494-7708</a>
-                        </li>
-                        <li>
-                            <label class="contact-option-type">Email</label>
-                            <a class="footer-contact-links footer-links" href="#contact-container">healthyrelationstherapy</a>
-                        </li>
-                        <li>
-                            <a id="footer-instagram-icon" class="footer-contact-social-media-icons" href="linkedin.com"></a>
-                            <a id="footer-linkedin-icon" class="footer-contact-social-media-icons" href="instagram.com"></a>
-                        </li>
-                    </ul>
-
-                </div>
-
-                <div id="footer-statement">
-                    <h3 class="footer-section-title">S t a t e m e n t</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi alias blanditiis error nulla ab magnam quod accusantium facere laboriosam, cumque impedit temporibus quis eveniet iusto vitae voluptas omnis cum ratione! Quo, cumque quos! Deserunt, nobis ullam officia tenetur, perferendis eligendi dolorem recusandae molestias veniam quidem maxime eos neque libero eveniet aut quisquam debitis magni perspiciatis!</p>
-                </div>
-
-                <div id="footer-map-and-closing-items">
-                    <h3 class="footer-section-title">M a p</h3>
-                    <div id="map"></div>
-                    <div id="footer-enders-container">
-                            <div id="footer-logo" class="footer-enders"></div>
-                            <div id="back-to-top" class="footer-enders">
-                                <a href="#body">Back to Top</a>
-                                <a href="#body" id="back-to-top-icon"></a>
-                            </div>
-                    </div>
-                    
-                </div>
-
-                <a id="back-to-top-mobile" href="#navbar"></a>
-            </footer>
-
-            <h6 id="copyright">| © | 2018 | healthyrelationshipstherapy.com | All Rights Reserved |</h6>
-
-
-        </div> -->
-
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
         <script src="../src/js/main.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
     </body>
 </html>
 

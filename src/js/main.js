@@ -35,32 +35,12 @@ function closeMenu() {
     menuOpen = false;
 }
 
-/*
-* link smooth scrolling ==========================================================
-*/
 
-
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     });
-// });
-
-// $('a[href*="#"]').on('click', function (e) {
-//     e.preventDefault()
-
-//     $('html, body').animate(
-//         {
-//             scrollTop: $($(this).attr('href')).offset().top,
-//         },
-//         500,
-//         'linear'
-//     )
-// })
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 800,
+    speedAsDuration: true,
+    header: '[navbar]'
+});
 
 
 
