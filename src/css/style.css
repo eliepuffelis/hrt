@@ -823,8 +823,30 @@ transition: ease-in-out 0.2s;
 
 /*Break Point Mid*/
 @media(min-width: 700px) {
+
+  .hero-image__header {
+    font-size: 11em;
+  }
+
+  .hero-image__sub-header {
+    font-size: 1em;
+    letter-spacing: 0.3em;
+    margin-top: 7vh;
+  }
+
+  .hero-image__link {
+    top: 83%;
+    font-size: 1.2em;
+    padding: 1em 4em;
+  }
+  
+
   .menu-mobile {
     width: 40%;
+  }
+
+  .services-dropdown, .faq-dropdown {
+    border-radius: 50px;
   }
 
   .form {
@@ -839,9 +861,10 @@ transition: ease-in-out 0.2s;
   }
 
   .form__field {
-   width: 40vw;
+   width: 43vw;
+   height: 6vh;
    margin: 0;
-   margin: 3vh 0;
+   margin: 2vh 0;
   }
 
   .form__submit-button {
@@ -854,11 +877,14 @@ transition: ease-in-out 0.2s;
     font-size: 1em;
   }
 
+
+
 }
 
 
 /*Break Point Large*/
 @media (min-width: 1000px) {
+
 
   .menu-mobile {
     width: 35%;
@@ -1170,9 +1196,88 @@ transition: ease-in-out 0.2s;
     background-size: cover;
   }
 
+  .hero-image__header {
+    font-size: 12em;
+  }
+
+  .hero-image__sub-header {
+    font-size: 1.5em;
+    letter-spacing: 0.3em;
+    margin-top: 7vh;
+  }
+
+  .hero-image__link {
+    top: 80%;
+    font-size: 1em;
+    padding: 1em 5.5em;
+    transition: ease-in-out 0.3s;
+    background: rgba(255, 255, 255, 0.4)
+  }
+
+  .hero-image__link:hover {
+    transform: scale(1.1, 1.1);
+    background: white;
+  }
+
+
+  .about-me__profile-image {
+    width:250px;
+    height: 250px;
+  }
+
+  .about-me__license-title {
+    margin: 7vh 0;
+    font-size: 1.8em;
+  }
+
+  .about-me__description {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.2em;
+    width: 70%;
+  }
+
+  .about-me__learn-more {
+    font-size: 1em;
+    padding: 1em 5.5em;
+    color: white;
+    transition: ease-in-out 0.3s;
+    background: transparent;
+  }
+
+  .about-me__learn-more:hover {
+    background: white;
+    color: var(--green-site-color);
+  }
+
+  .about-me__learn-more:hover {
+    background: white;
+    color: var(--green-site-color);
+  }
+
+  .pricing__card {
+    height: 51vh;
+  }
+  .pricing__card__image {
+    height: 18vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+  .pricing__card__subtitle--none {
+    display: block;
+    visibility: hidden;
+  }
+
+  .form__field {
+    width: 35vw;
+    margin-bottom: 5vh;
+  }
+
 
   .footer__statement > p {
-    line-height: 1.7em;
+    line-height: 2em;
   }
 }
 
