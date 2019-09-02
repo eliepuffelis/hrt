@@ -320,7 +320,7 @@ transition: ease-in-out 0.2s;
   display: block;
 }
 
-.services-dropdown__input#individual-services,#couple-services,#children-services,#family-services,#group-services,#telemedia-services {
+.services-dropdown__input#individual-services,#couple-services,#children-services,#family-services,#group-services,#telemedia-services,#consulting-services {
   display: none;
 }
 
@@ -380,6 +380,12 @@ transition: ease-in-out 0.2s;
 
 #group-pricing-image {
   background: url(../../images/pricing_images/group_pricing.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#consulting-pricing-image {
+  background: url(../../images/pricing_images/consulting_pricing.png);
   background-size: cover;
   background-position: center;
 }
@@ -582,6 +588,7 @@ transition: ease-in-out 0.2s;
   background: black;
   color: white;
   margin: 0;
+  margin-top: auto;
   text-align: center;
   padding-bottom: 5vh;
 }
@@ -993,6 +1000,8 @@ transition: ease-in-out 0.2s;
     padding-top: 6vh;
     padding-bottom: 8vh;
   }
+
+  
 
   .pricing__header {
     text-align: center;
