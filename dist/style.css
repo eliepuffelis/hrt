@@ -51,7 +51,7 @@ p {
   float: left;
   width: 20%;
   height: 60%;
-  background: url(images/hrt_logo/logo_black.png);
+  background: url(/images/hrt_logo/logo_black.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -82,7 +82,7 @@ p {
 .navbar__menu-bars {
   width: 35px;
   height: 35px;
-  background: url(images/interactive_icons/menu_bars.png);
+  background: url(/images/interactive_icons/menu_bars.png);
   background-size: cover;
   margin-left: 10%;
   margin-right: 6%;
@@ -116,28 +116,28 @@ p {
 }
 
 .menu-mobile__icon--home{
-  background: url(images/menu_icons/menu_home_icon.png);
+  background: url(/images/menu_icons/menu_home_icon.png);
 }
 .menu-mobile__icon--about-me{
-  background: url(images/menu_icons/menu_about_me_icon.png);
+  background: url(/images/menu_icons/menu_about_me_icon.png);
 }
 .menu-mobile__icon--services{
-  background: url(images/menu_icons/menu_services_icon.png);
+  background: url(/images/menu_icons/menu_services_icon.png);
 }
 .menu-mobile__icon--pricing{
-  background: url(images/menu_icons/menu_pricing_icon.png);
+  background: url(/images/menu_icons/menu_pricing_icon.png);
 }
 .menu-mobile__icon--faq{
-  background: url(images/menu_icons/menu_faq_icon.png);
+  background: url(/images/menu_icons/menu_faq_icon.png);
 }
 .menu-mobile__icon--contact{
-  background: url(images/menu_icons/menu_contact_icon.png);
+  background: url(/images/menu_icons/menu_contact_icon.png);
 }
 .menu-mobile__icon--resources{
-  background: url(images/menu_icons/menu_resources_icon.png);
+  background: url(/images/menu_icons/menu_resources_icon.png);
 }
 .menu-mobile__icon--gallery{
-  background: url(images/menu_icons/menu_gallery_icon.png);
+  background: url(/images/menu_icons/menu_gallery_icon.png);
 }
 
 .menu-mobile__icon {
@@ -170,7 +170,7 @@ p {
 .hero-image {
   position: relative;
   height: 100vh;
-  background: url(images/hero_images/hero_image_2.jpg);
+  background: url(/images/hero_images/hero_image_2.jpg);
   background-size: cover;
   background-position: right;
   display: flex;
@@ -234,7 +234,7 @@ p {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: url(images/section_backgrounds/about_profile_image_opt.jpg);
+  background: url(/images/section_backgrounds/about_profile_image_opt.jpg);
   background-position: bottom;
   background-size: cover;
   margin: 0 auto;
@@ -288,7 +288,7 @@ p {
 .services-dropdown label {
 display: block;
 max-width: 100%;
-background: url(images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+background: url(/images/interactive_icons/dropdown_up.png) no-repeat 100% center;
 background-size: contain;
 height: 6.5vh;
 display: flex;
@@ -304,7 +304,7 @@ transition: ease-in-out 0.2s;
 
 /* Toggle Effect */
 .services-dropdown__input:checked ~ label {
-  background: url(images/interactive_icons/dropdown_down.png) no-repeat 100% center;
+  background: url(/images/interactive_icons/dropdown_down.png) no-repeat 100% center;
   background-size: contain;
   border: none;
   border-bottom: solid 1px black;
@@ -353,37 +353,37 @@ transition: ease-in-out 0.2s;
 }
 
 #consultation-pricing-image {
-  background: url(images/pricing_images/consultation_pricing.png);
+  background: url(/images/pricing_images/consultation_pricing.png);
   background-size: cover;
   background-position: center;
 }
 
 #individual-pricing-image {
-  background: url(images/pricing_images/individual_pricing.png);
+  background: url(/images/pricing_images/individual_pricing.png);
   background-size: cover;
   background-position: center;
 }
 
 #couples-pricing-image {
-  background: url(images/pricing_images/couple_pricing.png);
+  background: url(/images/pricing_images/couple_pricing.png);
   background-size: cover;
   background-position: center;
 }
 
 #family-pricing-image {
-  background: url(images/pricing_images/family_pricing.png);
+  background: url(/images/pricing_images/family_pricing.png);
   background-size: cover;
   background-position: center;
 }
 
 #group-pricing-image {
-  background: url(images/pricing_images/group_pricing.png);
+  background: url(/images/pricing_images/group_pricing.png);
   background-size: cover;
   background-position: center;
 }
 
 #consulting-pricing-image {
-  background: url(images/pricing_images/consulting_pricing.png);
+  background: url(/images/pricing_images/consulting_pricing.png);
   background-size: cover;
   background-position: center;
 }
@@ -425,7 +425,7 @@ transition: ease-in-out 0.2s;
 .faq-dropdown label {
   display: block;
   max-width: 100%;
-  background: url(images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+  background: url(/images/interactive_icons/dropdown_up.png) no-repeat 100% center;
   background-size: contain;
   height: 6.5vh;
   display: flex;
@@ -441,7 +441,7 @@ transition: ease-in-out 0.2s;
 
 /* Toggle Effect */
 .faq-dropdown__input:checked~label {
-  background: url(images/interactive_icons/dropdown_down.png) no-repeat 100% center;
+  background: url(/images/interactive_icons/dropdown_down.png) no-repeat 100% center;
   background-size: contain;
   border: none;
   border-bottom: solid 1px black;
@@ -463,7 +463,7 @@ transition: ease-in-out 0.2s;
 
 .form {
   padding: 8vh 5vw;
-  background: url(images/section_backgrounds/contact_background.jpg);
+  background: url(/images/section_backgrounds/contact_background.jpg);
   background-size: cover;
   background-position: center;
   border-top-left-radius: 30px;
@@ -562,12 +562,12 @@ transition: ease-in-out 0.2s;
 }
 
 .footer__contact__social-media-icon--instagram {
-  background: url(images/socialmedia_icons/instagram-icon-white.png);
+  background: url(/images/socialmedia_icons/instagram-icon-white.png);
   background-size: cover;
 }
 
 .footer__contact__social-media-icon--linkedin {
-  background: url(images/socialmedia_icons/linkedin-icon-white.png);
+  background: url(/images/socialmedia_icons/linkedin-icon-white.png);
   background-size: cover;
 }
 
@@ -799,7 +799,7 @@ transition: ease-in-out 0.2s;
     .faq-dropdown label {
       display: block;
       max-width: 100%;
-      background: url(images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+      background: url(/images/interactive_icons/dropdown_up.png) no-repeat 100% center;
       background-size: contain;
       height: 6vh;
       display: flex;
@@ -833,7 +833,7 @@ transition: ease-in-out 0.2s;
    .faq-dropdown label {
      display: block;
      max-width: 100%;
-     background: url(images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+     background: url(/images/interactive_icons/dropdown_up.png) no-repeat 100% center;
      background-size: contain;
      height: 7vh;
      display: flex;
@@ -878,7 +878,7 @@ transition: ease-in-out 0.2s;
   .services-dropdown label, .faq-dropdown label {
     display: block;
     max-width: 100%;
-    background: url(images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+    background: url(/images/interactive_icons/dropdown_up.png) no-repeat 100% center;
     background-size: contain;
     height: 5vh;
     display: flex;
@@ -937,42 +937,42 @@ transition: ease-in-out 0.2s;
   }
 
   #consultation-pricing-image {
-    background: url(images/pricing_images/consultation_pricing.png);
+    background: url(/images/pricing_images/consultation_pricing.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #individual-pricing-image {
-    background: url(images/pricing_images/individual_pricing.png);
+    background: url(/images/pricing_images/individual_pricing.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #couples-pricing-image {
-    background: url(images/pricing_images/couple_pricing.png);
+    background: url(/images/pricing_images/couple_pricing.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #family-pricing-image {
-    background: url(images/pricing_images/family_pricing.png);
+    background: url(/images/pricing_images/family_pricing.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #group-pricing-image {
-    background: url(images/pricing_images/group_pricing.png);
+    background: url(/images/pricing_images/group_pricing.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #consulting-pricing-image {
-    background: url(images/pricing_images/consulting_pricing.png);
+    background: url(/images/pricing_images/consulting_pricing.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1093,7 +1093,7 @@ transition: ease-in-out 0.2s;
   .faq-dropdown label {
     display: block;
     max-width: 100%;
-    background: url(images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+    background: url(/images/interactive_icons/dropdown_up.png) no-repeat 100% center;
     background-size: contain;
     height: 5.5vh;
     display: flex;
@@ -1158,42 +1158,42 @@ transition: ease-in-out 0.2s;
   }
 
   #consultation-pricing-image {
-    background: url(images/pricing_images/consultation_pricing.png);
+    background: url(/images/pricing_images/consultation_pricing.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #individual-pricing-image {
-    background: url(images/pricing_images/individual_pricing.png);
+    background: url(/images/pricing_images/individual_pricing.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #couples-pricing-image {
-    background: url(images/pricing_images/couple_pricing.png);
+    background: url(/images/pricing_images/couple_pricing.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #family-pricing-image {
-    background: url(images/pricing_images/family_pricing.png);
+    background: url(/images/pricing_images/family_pricing.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #group-pricing-image {
-    background: url(images/pricing_images/group_pricing.png);
+    background: url(/images/pricing_images/group_pricing.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   #consulting-pricing-image {
-    background: url(images/pricing_images/consulting_pricing.png);
+    background: url(/images/pricing_images/consulting_pricing.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1303,7 +1303,7 @@ transition: ease-in-out 0.2s;
    .faq-dropdown label {
      display: block;
      max-width: 100%;
-     background: url(images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+     background: url(/images/interactive_icons/dropdown_up.png) no-repeat 100% center;
      background-size: contain;
      height: 7.5vh;
      display: flex;
@@ -1362,42 +1362,42 @@ transition: ease-in-out 0.2s;
      }
 
      #consultation-pricing-image {
-       background: url(images/pricing_images/consultation_pricing.png);
+       background: url(/images/pricing_images/consultation_pricing.png);
        background-size: contain;
        background-repeat: no-repeat;
        background-position: center;
      }
 
      #individual-pricing-image {
-       background: url(images/pricing_images/individual_pricing.png);
+       background: url(/images/pricing_images/individual_pricing.png);
        background-size: contain;
        background-repeat: no-repeat;
        background-position: center;
      }
 
      #couples-pricing-image {
-       background: url(images/pricing_images/couple_pricing.png);
+       background: url(/images/pricing_images/couple_pricing.png);
        background-size: contain;
        background-repeat: no-repeat;
        background-position: center;
      }
 
      #family-pricing-image {
-       background: url(images/pricing_images/family_pricing.png);
+       background: url(/images/pricing_images/family_pricing.png);
        background-size: contain;
        background-repeat: no-repeat;
        background-position: center;
      }
 
      #group-pricing-image {
-       background: url(images/pricing_images/group_pricing.png);
+       background: url(/images/pricing_images/group_pricing.png);
        background-size: contain;
        background-repeat: no-repeat;
        background-position: center;
      }
 
      #consulting-pricing-image {
-       background: url(images/pricing_images/consulting_pricing.png);
+       background: url(/images/pricing_images/consulting_pricing.png);
        background-size: contain;
        background-repeat: no-repeat;
        background-position: center;
@@ -1459,7 +1459,7 @@ transition: ease-in-out 0.2s;
   .menu__close {
     width: 30px;
     height: 30px;
-    background: url(images/interactive_icons/close_menu.png);
+    background: url(/images/interactive_icons/close_menu.png);
     background-size: cover;
     margin-right: 7em;
     transition: ease-in-out 0.25s;
@@ -1509,42 +1509,42 @@ transition: ease-in-out 0.2s;
   }
 
   .menu__icon-home {
-    background: url(images/menu_icons/menu_home_icon.png);
+    background: url(/images/menu_icons/menu_home_icon.png);
     background-size: cover;
   }
 
   .menu__icon-about-me {
-    background: url(images/menu_icons/menu_about_me_icon.png);
+    background: url(/images/menu_icons/menu_about_me_icon.png);
     background-size: cover;
   }
 
   .menu__icon-services {
-    background: url(images/menu_icons/menu_services_icon.png);
+    background: url(/images/menu_icons/menu_services_icon.png);
     background-size: cover;
   }
 
   .menu__icon-pricing {
-    background: url(images/menu_icons/menu_pricing_icon.png);
+    background: url(/images/menu_icons/menu_pricing_icon.png);
     background-size: cover;
   }
 
   .menu__icon-faq {
-    background: url(images/menu_icons/menu_faq_icon.png);
+    background: url(/images/menu_icons/menu_faq_icon.png);
     background-size: cover;
   }
 
   .menu__icon-contact {
-    background: url(images/menu_icons/menu_contact_icon.png);
+    background: url(/images/menu_icons/menu_contact_icon.png);
     background-size: cover;
   }
 
   .menu__icon-resources {
-    background: url(images/menu_icons/menu_resources_icon.png);
+    background: url(/images/menu_icons/menu_resources_icon.png);
     background-size: cover;
   }
 
   .menu__icon-gallery {
-    background: url(images/menu_icons/menu_gallery_icon.png);
+    background: url(/images/menu_icons/menu_gallery_icon.png);
     background-size: cover;
   }
 
@@ -1613,7 +1613,7 @@ transition: ease-in-out 0.2s;
   .faq-dropdown label {
     display: block;
     max-width: 100%;
-    background: url(images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+    background: url(/images/interactive_icons/dropdown_up.png) no-repeat 100% center;
     background-size: contain;
     height: 7.5vh;
     display: flex;
@@ -1667,14 +1667,14 @@ transition: ease-in-out 0.2s;
   }
   
   .landscape-message--english {
-    background: url(images/section_backgrounds/landscape_message.png);
+    background: url(/images/section_backgrounds/landscape_message.png);
     background-size: cover;
     background-position: center;
     background-color: black;
   }
 
   .landscape-message--spanish {
-    background: url(images/section_backgrounds/landscape_message_spanish.png);
+    background: url(/images/section_backgrounds/landscape_message_spanish.png);
     background-size: cover;
     background-position: center;
     background-color: black;
