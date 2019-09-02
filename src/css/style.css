@@ -10,9 +10,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--main-text-color);
-   
-    
-}
+  }
 
 #site-wrapper {
   position: relative;
@@ -91,7 +89,7 @@ p {
   cursor: pointer;
 }
 
-.landscape-overlay {
+.landscape-message {
   display: none;
 }
 
@@ -514,7 +512,7 @@ transition: ease-in-out 0.2s;
   position: relative;
   background: black;
   color: white;
-  padding: 4vh 5vw;
+  padding: 4vh 7vw 0vh;
 }
 
   .footer a {
@@ -538,6 +536,8 @@ transition: ease-in-out 0.2s;
 .footer__list {
   list-style-type: none;
   padding-left: 0;
+  margin: 0;
+  padding: 0 0 2vh;
 }
 
 .footer--links {
@@ -571,26 +571,27 @@ transition: ease-in-out 0.2s;
   background-size: cover;
 }
 
+
 .back-to-top-mobile {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  bottom: 10%;
-  right: 10%;
-  background: url(../../images/interactive_icons/back_to_top_arrow_white.png);
-  border-top: solid white 2px;
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 0.3em;
+  padding: 2em 0;
+  background: black;
 }
 
 .copyright {
+  display: block;
   background: black;
   color: white;
   margin: 0;
-  margin-top: auto;
   text-align: center;
-  padding-bottom: 5vh;
+  padding: 2vh 0vh 5vh 0;
+  font-size: 0.5em;
+  
 }
 
 /*
@@ -770,22 +771,7 @@ transition: ease-in-out 0.2s;
       margin-top: 5%;
     }
 
-    .back-to-top-mobile {
-      width: 50px;
-      height: 50px;
-      bottom: 8%;
-      right: 10%;
-      background-size: 60%;
-    }
-
-
-
-    
-
-
-
-
-}
+ }
 
 
 /*Tweak Point*/
@@ -902,6 +888,119 @@ transition: ease-in-out 0.2s;
     transition: ease-in-out 0.2s;
   }
 
+  .pricing {
+    padding: 0;
+    padding-top: 6vh;
+    padding-bottom: 8vh;
+  }
+
+
+
+  .pricing__header {
+    text-align: center;
+    margin-bottom: 8vh;
+    color: white;
+    font-size: 2em;
+  }
+
+  .pricing__card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .pricing__card {
+    margin: 0;
+    padding: 1em 0;
+    width: 42vw;
+    margin-bottom: 5vh;
+
+  }
+
+  .pricing__card:hover {
+    transform: scale(1.05, 1.05);
+  }
+
+  .pricing__card__title {
+    text-align: center;
+    margin-bottom: 3vh;
+    font-size: 1.5em;
+  }
+
+
+  .pricing__card__image {
+    max-width: 100%;
+    height: 15vh;
+    margin-bottom: 3vh;
+  }
+
+  #consultation-pricing-image {
+    background: url(../../images/pricing_images/consultation_pricing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #individual-pricing-image {
+    background: url(../../images/pricing_images/individual_pricing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #couples-pricing-image {
+    background: url(../../images/pricing_images/couple_pricing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #family-pricing-image {
+    background: url(../../images/pricing_images/family_pricing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #group-pricing-image {
+    background: url(../../images/pricing_images/group_pricing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #consulting-pricing-image {
+    background: url(../../images/pricing_images/consulting_pricing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .pricing__card__price {
+    font-size: 1.5em;
+  }
+
+
+  .pricing__card__subtitle {
+    text-align: center;
+    color: gray;
+    font-weight: lighter;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+  }
+
+  .pricing__card__subtitle--none {
+    display: block;
+    visibility: hidden;
+  }
+
+  .pricing__card__bullets {
+    font-size: 1.2em;
+    padding-left: 1.5em;
+  }
+
   .form {
     display: flex;
     justify-content: flex-end;
@@ -931,8 +1030,22 @@ transition: ease-in-out 0.2s;
     font-size: 1em;
   }
 
+  .copyright {
+    font-size: 0.7em;
+  }
 
 
+
+}
+
+@media(min-width:700px) and (orientation: landscape) {
+
+    .footer__statement {
+      display: block;
+      width: 25vw;
+      font-size: 0.9em;
+      line-height: 1.2em;
+    }
 }
 
 
@@ -995,13 +1108,14 @@ transition: ease-in-out 0.2s;
     background: whitesmoke;
   }
 
+
   .pricing {
     padding: 0;
     padding-top: 6vh;
     padding-bottom: 8vh;
   }
 
-  
+
 
   .pricing__header {
     text-align: center;
@@ -1010,18 +1124,19 @@ transition: ease-in-out 0.2s;
     font-size: 2em;
   }
 
-  .pricing__card-container{
+  .pricing__card-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
   }
 
   .pricing__card {
     margin: 0;
-    padding: 1em 0;
-    width: 16%;
-    height: 55vh;
+    padding: 2em 0;
+    width: 42vw;
+    margin-bottom: 5vh;
 
   }
 
@@ -1032,27 +1147,81 @@ transition: ease-in-out 0.2s;
   .pricing__card__title {
     text-align: center;
     margin-bottom: 3vh;
-    font-size: 1.3em;
+    font-size: 2em;
   }
 
 
   .pricing__card__image {
     max-width: 100%;
-    height: 20vh;
-    margin-bottom: 5vh;
+    height: 15vh;
+    margin-bottom: 3vh;
   }
+
+  #consultation-pricing-image {
+    background: url(../../images/pricing_images/consultation_pricing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #individual-pricing-image {
+    background: url(../../images/pricing_images/individual_pricing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #couples-pricing-image {
+    background: url(../../images/pricing_images/couple_pricing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #family-pricing-image {
+    background: url(../../images/pricing_images/family_pricing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #group-pricing-image {
+    background: url(../../images/pricing_images/group_pricing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #consulting-pricing-image {
+    background: url(../../images/pricing_images/consulting_pricing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .pricing__card__price {
+    font-size: 2em;
+  }
+
 
   .pricing__card__subtitle {
     text-align: center;
     color: gray;
     font-weight: lighter;
-    font-size: 0.9em;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+  }
+
+  .pricing__card__subtitle--none {
+    display: block;
+    visibility: hidden;
   }
 
   .pricing__card__bullets {
-    font-size: 1em;
-    padding-left: 1.5em;
+    font-size: 1.3em;
+    padding-left: 2.5em;
   }
+
 
   .faq-dropdown {
     width: 80%;
@@ -1114,65 +1283,16 @@ transition: ease-in-out 0.2s;
 
   .footer__statement {
     display: block;
-    width: 15vw;
+    width: 25vw;
+    font-size: 0.9em;
+    line-height: 1.2em;
   }
 
-  .footer__statement{
-    display: none;
-  }
-
-  .footer__map {
-    display: block;
-  }
-
-  .footer__map__image {
-    display: block;
-    width: 20vh;
-    height: 15vh;
-    background: url(../../images/map/map_bw_opt.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px;
-  }
-
-  .footer__closing-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%; 
-    height: 5vh;
-    margin: 0;
-    margin-top: 2em;
-  }
-
-  .footer-enders {
-    width: 50%;
-    height: 100%;
-    font-size: 1em;
-    color: white;
-  }
-
-  .footer__closing-items__logo {
-    background: url(../../images/hrt_logo/logo_white.png);
-    background-size: cover;
-    background-position: center;
-   
-  }
-
-  .footer__closing-items__back-to-top {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    background: url(../../images/interactive_icons/back_to_top_arrow_white.png);
-    background-size: 35%;
-    background-repeat: no-repeat;
-    background-position: center;
-
-  }
+  
 
   .back-to-top-mobile {
-    display: none;
+    bottom: 2vh;
+    right: 5vw;
   }
 
 
@@ -1192,6 +1312,121 @@ transition: ease-in-out 0.2s;
      font-weight: bold;
      transition: ease-in-out 0.2s;
    }
+
+     .pricing {
+       padding: 0;
+       padding-top: 6vh;
+       padding-bottom: 8vh;
+     }
+
+
+
+     .pricing__header {
+       text-align: center;
+       margin-bottom: 8vh;
+       color: white;
+       font-size: 2em;
+     }
+
+     .pricing__card-container {
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+       align-items: center;
+     }
+
+     .pricing__card {
+       margin: 0;
+       padding: 1em 0;
+       width: 26vw;
+       margin-bottom: 5vh;
+
+     }
+
+     .pricing__card:hover {
+       transform: scale(1.05, 1.05);
+     }
+
+     .pricing__card__title {
+       text-align: center;
+       margin-bottom: 3vh;
+       font-size: 1.5em;
+     }
+
+
+     .pricing__card__image {
+       max-width: 100%;
+       height: 15vh;
+       margin-bottom: 3vh;
+     }
+
+     #consultation-pricing-image {
+       background: url(../../images/pricing_images/consultation_pricing.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+     }
+
+     #individual-pricing-image {
+       background: url(../../images/pricing_images/individual_pricing.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+     }
+
+     #couples-pricing-image {
+       background: url(../../images/pricing_images/couple_pricing.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+     }
+
+     #family-pricing-image {
+       background: url(../../images/pricing_images/family_pricing.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+     }
+
+     #group-pricing-image {
+       background: url(../../images/pricing_images/group_pricing.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+     }
+
+     #consulting-pricing-image {
+       background: url(../../images/pricing_images/consulting_pricing.png);
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+     }
+
+     .pricing__card__price {
+       font-size: 1.5em;
+     }
+
+
+     .pricing__card__subtitle {
+       text-align: center;
+       color: gray;
+       font-weight: lighter;
+       font-size: 0.9em;
+       margin-bottom: 2em;
+     }
+
+     .pricing__card__subtitle--none {
+       display: block;
+       visibility: hidden;
+     }
+
+     .pricing__card__bullets {
+       font-size: 1em;
+       padding-left: 1.5em;
+     }
+
+     
 }
 
 
@@ -1412,42 +1647,40 @@ transition: ease-in-out 0.2s;
 
   .footer__statement {
     display: block;
-  }
-
-
-  .footer__statement > p {
-    font-size: 0.8em;
-    line-height: 1.5em;
-  }
-
-  .footer__map__image {
     width: 20vw;
-    height: 20vh;
+    font-size: 0.9em;
+    line-height: 1.3em;
   }
 
-  .footer__closing-items__logo,
-  .footer__closing-items__back-to-top {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+
 
 }
 
 
 /*Landscape Message*/
-@media(max-width: 999px) and (orientation: landscape) {
-  .landscape-overlay {
+@media(max-width: 850px) and (orientation: landscape) {
+  .landscape-message {
     display: block;
     position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: 2;
-    overflow: hidden;
+    overflow: hidden
+  }
+  
+  .landscape-message--english {
     background: url(../../images/section_backgrounds/landscape_message.png);
     background-size: cover;
     background-position: center;
     background-color: black;
+  }
+
+  .landscape-message--spanish {
+    background: url(../../images/section_backgrounds/landscape_message_spanish.png);
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+
   }
 
 }
