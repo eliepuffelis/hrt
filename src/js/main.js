@@ -19,15 +19,18 @@ function menubars() {
 }
 
 function openMenu(){
+    menu.style.visibility = 'visible';
+    menu.style.right = '0';
     menuMobile.style.visibility = 'visible';
     menuMobile.style.right = '0';
     darkOverlay.style.visibility = 'visible'
     body.style.overflow = 'hidden'
     menuOpen = true; 
-
 }
 
 function closeMenu() {
+    menu.style.visibility = 'hidden';
+    menu.style.right = '-100vw';
     menuMobile.style.visibility = 'hidden';
     menuMobile.style.right = '-100vw';
     darkOverlay.style.visibility = 'hidden'
