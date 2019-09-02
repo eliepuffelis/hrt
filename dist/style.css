@@ -1656,7 +1656,7 @@ transition: ease-in-out 0.2s;
 
 
 /*Landscape Message*/
-@media(max-width: 850px) and (orientation: landscape) {
+@media(max-width: 999px) and (orientation: landscape) {
   .landscape-message {
     display: block;
     position: fixed;
