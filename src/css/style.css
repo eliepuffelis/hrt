@@ -798,6 +798,23 @@ transition: ease-in-out 0.2s;
      font-size: 1em;
      padding: 1em 4em;
    }
+
+   .services-dropdown, .faq-dropdown {
+     margin-bottom: 5vh;
+   }
+    .services-dropdown label,
+    .faq-dropdown label {
+      display: block;
+      max-width: 100%;
+      background: url(../../images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+      background-size: contain;
+      height: 6vh;
+      display: flex;
+      align-items: center;
+      padding-left: 2em;
+      font-weight: bold;
+      transition: ease-in-out 0.2s;
+    }
 }
 
 
@@ -817,6 +834,20 @@ transition: ease-in-out 0.2s;
      top: 83%;
      font-size: 1em;
      padding: 1em 4em;
+   }
+
+   .services-dropdown label,
+   .faq-dropdown label {
+     display: block;
+     max-width: 100%;
+     background: url(../../images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+     background-size: contain;
+     height: 7vh;
+     display: flex;
+     align-items: center;
+     padding-left: 2em;
+     font-weight: bold;
+     transition: ease-in-out 0.2s;
    }
 }
 
@@ -847,6 +878,21 @@ transition: ease-in-out 0.2s;
 
   .services-dropdown, .faq-dropdown {
     border-radius: 50px;
+    margin: 0 auto 5vh auto;
+    width: 75vw;
+  }
+
+  .services-dropdown label, .faq-dropdown label {
+    display: block;
+    max-width: 100%;
+    background: url(../../images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+    background-size: contain;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    font-weight: bold;
+    transition: ease-in-out 0.2s;
   }
 
   .form {
@@ -865,6 +911,7 @@ transition: ease-in-out 0.2s;
    height: 6vh;
    margin: 0;
    margin: 2vh 0;
+   border-radius: 50px;
   }
 
   .form__submit-button {
@@ -885,14 +932,55 @@ transition: ease-in-out 0.2s;
 /*Break Point Large*/
 @media (min-width: 1000px) {
 
+  .navbar {
+    height: 8vh;
+  }
 
   .menu-mobile {
-    width: 35%;
+    width: 40%;
+    top: 8vh;
+    height: 92vh;
+  }
+
+  .menu-mobile-dark-overlay {
+    top: 8vh;
+    height: 92vh;
+  }
+
+
+
+  .about-me__profile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-me__license-title {
+    font-size: 2em;
+  }
+
+  .about-me__description {
+    width: 70vw;
+    font-size: 1.2em;
+    margin: 0 auto;
   }
 
   .services-dropdown {
     width: 80%;
     margin: 0 auto 5vh auto;
+  }
+
+  .services-dropdown label,
+  .faq-dropdown label {
+    display: block;
+    max-width: 100%;
+    background: url(../../images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+    background-size: contain;
+    height: 5.5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    font-weight: bold;
+    transition: ease-in-out 0.2s;
   }
 
   .services-dropdown:hover {
@@ -967,6 +1055,10 @@ transition: ease-in-out 0.2s;
     background: whitesmoke;
   }
 
+  .form__field {
+    height: 5vh;
+  }
+
   
 
   .form__field:hover {
@@ -1016,9 +1108,8 @@ transition: ease-in-out 0.2s;
     width: 15vw;
   }
 
-  .footer__statement > p {
-    font-size: 0.8em;
-    line-height: 1.3em;
+  .footer__statement{
+    display: none;
   }
 
   .footer__map {
@@ -1027,8 +1118,8 @@ transition: ease-in-out 0.2s;
 
   .footer__map__image {
     display: block;
-    width: 30vh;
-    height: 20vh;
+    width: 20vh;
+    height: 15vh;
     background: url(../../images/map/map_bw_opt.jpg);
     background-size: cover;
     background-position: center;
@@ -1040,7 +1131,7 @@ transition: ease-in-out 0.2s;
     align-items: center;
     justify-content: center;
     width: 100%; 
-    height: 6vh;
+    height: 5vh;
     margin: 0;
     margin-top: 2em;
   }
@@ -1056,6 +1147,7 @@ transition: ease-in-out 0.2s;
     background: url(../../images/hrt_logo/logo_white.png);
     background-size: cover;
     background-position: center;
+   
   }
 
   .footer__closing-items__back-to-top {
@@ -1064,7 +1156,7 @@ transition: ease-in-out 0.2s;
     display: flex;
     align-items: center;
     background: url(../../images/interactive_icons/back_to_top_arrow_white.png);
-    background-size: contain;
+    background-size: 35%;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -1075,6 +1167,22 @@ transition: ease-in-out 0.2s;
   }
 
 
+}
+
+@media (min-width: 1000px) and (orientation: landscape) {
+   .services-dropdown label,
+   .faq-dropdown label {
+     display: block;
+     max-width: 100%;
+     background: url(../../images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+     background-size: contain;
+     height: 7.5vh;
+     display: flex;
+     align-items: center;
+     padding-left: 2em;
+     font-weight: bold;
+     transition: ease-in-out 0.2s;
+   }
 }
 
 
@@ -1211,12 +1319,14 @@ transition: ease-in-out 0.2s;
     font-size: 1em;
     padding: 1em 5.5em;
     transition: ease-in-out 0.3s;
-    background: rgba(255, 255, 255, 0.4)
+    background: white;
+
   }
 
   .hero-image__link:hover {
     transform: scale(1.1, 1.1);
-    background: white;
+    background: var(--main-text-color);
+    color: white;
   }
 
 
@@ -1255,6 +1365,21 @@ transition: ease-in-out 0.2s;
     color: var(--green-site-color);
   }
 
+  .services-dropdown label,
+  .faq-dropdown label {
+    display: block;
+    max-width: 100%;
+    background: url(../../images/interactive_icons/dropdown_up.png) no-repeat 100% center;
+    background-size: contain;
+    height: 7.5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    font-size: 1em;
+    font-weight: bold;
+    transition: ease-in-out 0.2s;
+  }
+
   .pricing__card {
     height: 51vh;
   }
@@ -1273,12 +1398,31 @@ transition: ease-in-out 0.2s;
   .form__field {
     width: 35vw;
     margin-bottom: 5vh;
+    height: 6vh;
+  }
+
+  .footer__statement {
+    display: block;
   }
 
 
   .footer__statement > p {
-    line-height: 2em;
+    font-size: 0.8em;
+    line-height: 1.5em;
   }
+
+  .footer__map__image {
+    width: 20vw;
+    height: 20vh;
+  }
+
+  .footer__closing-items__logo,
+  .footer__closing-items__back-to-top {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
 }
 
 
