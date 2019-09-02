@@ -90,6 +90,10 @@ p {
   cursor: pointer;
 }
 
+.landscaoe-overlay {
+  display: none;
+}
+
 .menu-mobile {
   position: fixed;
   top: 8vh;
@@ -944,6 +948,27 @@ transition: ease-in-out 0.2s;
     line-height: 1.7em;
   }
 }
+
+/*
+  Landscape Message
+*/
+@media(max-width: 999px) and (orientation: landscape) {
+  .landscape-overlay {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    overflow: hidden;
+    background: url(../../images/section_backgrounds/landscape_message.png);
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+  }
+
+}
+
+
 
 
 
