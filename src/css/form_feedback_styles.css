@@ -1,0 +1,52 @@
+:root {
+    --main-text-color: #333333;
+    --green-site-color: rgb(59, 121, 94);
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-text-color);
+}
+
+.site-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(/images/section_backgrounds/feedback_bg_3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.feedback-card {
+    padding: 2em 2em;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.return-to-site {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--green-site-color);
+    border-radius: 50px;
+    border: solid var(--green-site-color) 2px;
+    padding: 0.8em 2.2em;
+    transition: ease-in-out 0.3s;
+    margin: 2em 0 0;
+    
+}
+
+.return-to-site:hover {
+    background: var(--green-site-color);
+    color: white
+}
+
+
+
