@@ -9,7 +9,7 @@
     <meta name="keywords" content="hrt, hrtsd, healthy, relationships, therapy, therapist, san diego, san diego therapy, san diego therapist, affordable, affordable therapy, affordable therapist">
     <meta name="description" content="hrt offers therapy for better healthy relationships in san diego, california and all around the worl. hrt services are affordable, reliablie and work.">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
@@ -18,10 +18,10 @@
     <div id="site-wrapper">
 
         <nav class="navbar" navbar>
-            <a class="navbar__logo" href="index_esp.html"></a>
+            <a class="navbar__logo" href="index-esp.html"></a>
             <a class="navbar__language-option" href="index.html" style="color: lightgray">ENG</a>
             <div class="navbar__language-divisor"></div>
-            <a class="navbar__language-option" href="index_esp.html">> ESP</a>
+            <a class="navbar__language-option" href="index-esp.html">> ESP</a>
             <div class="navbar__menu-bars" onclick="menubars()"></div>
         </nav>
 
@@ -152,7 +152,7 @@
                 convivir con amigas. Angie se reta a sí misma corriendo en maratones y explora hobbies nuevos que le
                 llaman la atención. Sea por medio de sus logros profesionales, o experiencias diarias, Angie siempre
                 busca cómo puede servir a sus clientes con mayor calidad. </p>
-            <a class="about-me__learn-more" href="about_me.html">Más Informacion</a>
+            <a class="about-me__learn-more" href="about-me-esp.html">Más Informacion</a>
         </section>
 
 
@@ -389,7 +389,7 @@
 
             <div class="faq-dropdown">
                 <input type="checkbox" id="question-eight" class="faq-dropdown__input">
-                <label for="question-eight">Puede un menor beneficiarse recibir terapia?</label>
+                <label for="question-eight">Hay beneficio en terapia para niños?</label>
                 <p class="faq-dropdown__content">Varios terapeutas están profesionalmente equipados y utilizan la
                     “terapia de juego” que es el lenguaje universal. Ya que los menores tienen limitaciones verbales de
                     expresarse apropiadamente, este estilo de terapia les ayuda.
@@ -402,12 +402,12 @@
         </section>
 
 
-        <form id="form" method="POST" action="form_feedback.html" class="form wrapper" data-netlify="true">
+        <form id="form" method="POST" action="/gracias.html" class="form wrapper" data-netlify="true">
             <div class="form__container">
-                <h1 class="form__header">mensaje a hrt.</h1>
-                <input class="form__field" type="text" name="" required placeholder="Nombre *">
-                <input class="form__field" type="text" name="" required placeholder="Apellido *">
-                <input class="form__field" type="text" name="" required placeholder="Email *">
+                <h1 class="form__header">contact hrt.</h1>
+                <input class="form__field" type="text" name="firstname" required placeholder="Nombre *">
+                <input class="form__field" type="text" name="lastname" required placeholder="Apellido *">
+                <input class="form__field" type="text" name="email" required placeholder="Email *">
                 <button class="form__submit-button" type="submit" name="submit">Enviar</button>
             </div>
         </form>
@@ -419,14 +419,14 @@
                 <h1 class="footer__section-title">M E N U</h1>
 
                 <ul class="footer__list">
-                    <li><a class="footer__menu-links footer--links" href="">Inicio</a></li>
-                    <li><a class="footer__menu-links footer--links" href="">Acerca De</a></li>
-                    <li><a class="footer__menu-links footer--links" href="">Servicios</a></li>
-                    <li><a class="footer__menu-links footer--links" href="">Costos</a></li>
-                    <li><a class="footer__menu-links footer--links" href="">Preguntas Frecuentes</a></li>
-                    <li><a class="footer__menu-links footer--links" href="">Contacto</a></li>
-                    <li><a class="footer__menu-links footer--links" href="">Recursos</a></li>
-                    <li><a class="footer__menu-links footer--links" href="">Galería</a></li>
+                    <li><a class="footer__menu-links footer--links" href="#body">Inicio</a></li>
+                    <li><a class="footer__menu-links footer--links" href="#about-me">Acerca De</a></li>
+                    <li><a class="footer__menu-links footer--links" href="#services">Servicios</a></li>
+                    <li><a class="footer__menu-links footer--links" href="#pricing">Costos</a></li>
+                    <li><a class="footer__menu-links footer--links" href="#faq">Preguntas Frecuentes</a></li>
+                    <li><a class="footer__menu-links footer--links" href="#form">Contacto</a></li>
+                    <li><a class="footer__menu-links footer--links" href="#resources">Recursos</a></li>
+                    <li><a class="footer__menu-links footer--links" href="#this">Galería</a></li>
                 </ul>
 
             </section>
@@ -508,7 +508,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
     </script>
-    <script src="../src/js/main.js"></script>
+    <script src="main.js"></script>
 
 </body>
 
