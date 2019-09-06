@@ -5,7 +5,7 @@ var menuMobile = document.getElementById("menu-mobile");
 var darkOverlay = document.getElementById("menu-mobile-dark-overlay");
 var menuOpen = false;
 
-
+// document.location.href = String(document.location.href).replace("#/", "");
 
 /*
 * menu functionality ==========================================================
@@ -42,7 +42,8 @@ function closeMenu() {
 var scroll = new SmoothScroll('a[href*="#"]', {
     speed: 2000,
     speedAsDuration: true,
-    header: '[navbar]'
+    header: '[navbar]',
+    updateURL: false
 });
 
 
