@@ -3,5 +3,71 @@
 }
 
 .about-me-container {
-    padding: 5em;
+    padding: 5em 1.3em 3em 1.3em;
+}
+
+
+.about-me-container__list li {
+    padding: 0.7em 0;
+}
+
+h3 {
+    padding-top: 1em; 
+}
+
+@media (min-width: 375px){
+    .about-me-container {
+        padding: 5em 2em 3em 2em;
+    }
+
+}
+
+@media(min-width: 700px){
+   
+}
+
+@media(min-width: 700px) and (orientation: landscape) {
+
+}
+
+@media(min-width: 1000px) {
+     p {
+         width: 80%;
+     }
+}
+
+@media(min-width: 1000px) and (orientation: landscape) {
+
+}
+
+
+@media(min-width: 1350px){
+
+}
+
+@media(max-width: 850px) and (orientation: landscape) {
+    .landscape-message {
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        overflow: hidden
+    }
+
+    .landscape-message--english {
+        background: url(../../images/section_backgrounds/landscape_message.png);
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+    }
+
+    .landscape-message--spanish {
+        background: url(../../images/section_backgrounds/landscape_message_spanish.png);
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+
+    }
+
 }
